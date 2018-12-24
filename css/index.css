@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+*, html {
+    font-family: 'Ubuntu';
+
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body {
+    background-image: url('/photos/room.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#date_container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 35px;
+    transform: translate(0%, -50%);
+}
+
+#date {
+    font-size: 215%;
+}
+
+#time {
+    font-size: 500%;
+}
