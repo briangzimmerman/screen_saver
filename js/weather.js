@@ -4,7 +4,19 @@ function Weather(zip) {
 }
 
 Weather.prototype.update = function() {
+    var dfd = $.Deffered();
 
+    $.ajax({
+
+    })
+    .fail(function(response) {
+        dfd.reject('Could not update weather');
+    })
+    .done(function(response) {
+        dfd.resolve(response);
+    });
+
+    return dfd.promise();
 };
 
 Weather.prototype.getTemperature = function() {
