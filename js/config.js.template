@@ -1,0 +1,4 @@
+var config = {
+    weather_api_key: '',
+    unsplash_api_key: ''
+};
