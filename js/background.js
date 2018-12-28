@@ -18,7 +18,7 @@ function getBackground() {
         dfd.reject();
     })
     .done(function(response) {
-        dfd.resolve(response.urls.full);
+        dfd.resolve(response.urls.regular);
     });
 
     return dfd.promise();
