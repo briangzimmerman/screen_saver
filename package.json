@@ -1,0 +1,22 @@
+{
+  "name": "screen_saver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briangzimmerman/screen_saver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briangzimmerman/screen_saver/issues"
+  },
+  "homepage": "https://github.com/briangzimmerman/screen_saver#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
