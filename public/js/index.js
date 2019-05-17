@@ -4,23 +4,19 @@ var $temp = $('#temperature');
 var $weather_icon = $('.wi');
 var $weather_desc = $('#weather_description');
 var weather = false;
+var socket = io();
 
 //Update background
 updateBackground();
 setInterval(updateBackground, 30 * 60 * 1000); //30 minutes
 
 //Update Weather
-navigator.geolocation.getCurrentPosition(function(position) {
-    weather = new Weather(
-        position.coords.latitude,
-        position.coords.longitude
-    );
-
+socket.on('location', function(loc) {
+    weather = new Weather(loc.lat, loc.lon);
     updateWeather();
 });
 
 setInterval(updateWeather, 30 * 60 * 1000); //30 minutes
-
 
 //Update Time/Date
 setInterval(function() {

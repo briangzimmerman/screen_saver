@@ -25,9 +25,10 @@ body {
 
 #date_container {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     right: 35px;
-    transform: translate(0%, -50%);
+    bottom: 35px;
+    /* transform: translate(0%, -50%); */
 }
 
 #weather_container {
